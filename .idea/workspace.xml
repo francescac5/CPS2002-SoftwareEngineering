@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b738480-732c-43e4-8d6a-1c536ee425ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/CPS2002-SoftwareEngineering.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Part1/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1/Calculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +89,7 @@
       <workItem from="1586440404666" duration="923000" />
       <workItem from="1586441386265" duration="999000" />
       <workItem from="1586454370504" duration="106000" />
+      <workItem from="1586454602512" duration="25000" />
     </task>
     <servers />
   </component>
