@@ -19,6 +19,6 @@ public class Calculator {
             return -999;
         }
 
-        return a / b
+        return a / b;
     }
 }
