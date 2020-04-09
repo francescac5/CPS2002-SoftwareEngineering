@@ -2,106 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b738480-732c-43e4-8d6a-1c536ee425ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/CPS2002-SoftwareEngineering.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Part1/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1/Calculator.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1671294364">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="iml" value="1" />
-          <entry key="java" value="2" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="2" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="iml" value="1" />
-          <entry key="java" value="9" />
-          <entry key="xml" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="9" />
-          <entry key="XML" value="4" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="267363686">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Part1/Calculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Part1/CalculatorTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,108 +23,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/test/java/Part1/CalculatorTests.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Assignment.iml" />
-        <option value="$PROJECT_DIR$/src/main/java/Part1/Calculator.java" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="605" />
-    <option name="y" value="-10" />
-    <option name="width" value="1280" />
-    <option name="height" value="835" />
-  </component>
+  <component name="ProjectId" id="1aJWoiKnsTgKXGSH1INt3DN3t9O" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CPS2002-SoftwareEngineering" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002-SoftwareEngineering" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CPS2002-SoftwareEngineering" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002-SoftwareEngineering" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CPS2002-SoftwareEngineering" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002-SoftwareEngineering" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CPS2002-SoftwareEngineering" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002-SoftwareEngineering" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CPS2002-SoftwareEngineering" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002-SoftwareEngineering" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Part1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CPS2002-SoftwareEngineering" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002-SoftwareEngineering" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CPS2002-SoftwareEngineering" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002-SoftwareEngineering" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CPS2002-SoftwareEngineering" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002-SoftwareEngineering" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Part1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CPS2002-SoftwareEngineering" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002-SoftwareEngineering" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CPS2002-SoftwareEngineering" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002-SoftwareEngineering" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586452889711" />
@@ -236,18 +52,6 @@
       <recent name="D:\uni\2nd yr - semester 2\Software Engineering\Assignment" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="CalculatorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CPS2002-SoftwareEngineering" />
@@ -262,6 +66,7 @@
       <option name="PACKAGE_NAME" value="Part1" />
       <option name="MAIN_CLASS_NAME" value="Part1.CalculatorTests" />
       <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -285,85 +90,34 @@
       <updated>1586440399305</updated>
       <workItem from="1586440404666" duration="923000" />
       <workItem from="1586441386265" duration="999000" />
+      <workItem from="1586454370504" duration="106000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="CalculatorTests - 2020.04.09 at 15h 58m 47s.xml">
-      <configuration name="CalculatorTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculatorTests - 2020.04.09 at 16h 12m 42s.xml">
-      <configuration name="CalculatorTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculatorTests - 2020.04.09 at 16h 12m 55s.xml">
-      <configuration name="CalculatorTests" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1922000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37304965" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CPS2002-SoftwareEngineering/src/main/java/Part1/Calculator.java" />
-    <entry file="file://$PROJECT_DIR$/CPS2002-SoftwareEngineering/src/test/java/Part1/CalculatorTests.java" />
-    <entry file="file://$PROJECT_DIR$/CPS2002-SoftwareEngineering/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/CPS2002-SoftwareEngineering/Assignment.iml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Part1/CalculatorTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Part1/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state width="1358" height="235" key="GridCell.Tab.0.bottom" timestamp="1586454481704">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state width="1358" height="235" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1586454481704" />
+    <state width="1358" height="235" key="GridCell.Tab.0.center" timestamp="1586454481690">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state width="1358" height="235" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1586454481690" />
+    <state width="1358" height="235" key="GridCell.Tab.0.left" timestamp="1586454481688">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state width="1358" height="235" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1586454481688" />
+    <state width="1358" height="235" key="GridCell.Tab.0.right" timestamp="1586454481692">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state width="1358" height="235" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1586454481692" />
+    <state x="249" y="62" key="SettingsEditor" timestamp="1586454467591">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="249" y="62" key="SettingsEditor/0.23.1440.832@0.23.1440.832" timestamp="1586454467591" />
   </component>
   <component name="masterDetails">
     <states>
