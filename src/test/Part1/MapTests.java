@@ -2,6 +2,8 @@ package Part1;
 
 import org.junit.*;
 
+import java.io.File;
+
 import static org.junit.Assert.*;
 
 public class MapTests {
@@ -68,6 +70,16 @@ public class MapTests {
         assertFalse(result);
     }
 
+    @Test
+    public void testGenerate() {
+        //Exercise
+        //generates map0.html file
+        map.generate();
 
+        File map0 = new File("CPS2002-SoftwareEngineering\\src\\main\\resources\\map0.html");
+
+        //Assert
+        assertTrue(map0.exists());
+    }
 
 }

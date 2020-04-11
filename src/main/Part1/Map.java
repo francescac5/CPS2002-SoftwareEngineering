@@ -14,4 +14,7 @@ public class Map {
             return true;
         }
     }
+
+    public void generate() {
+    }
 }
