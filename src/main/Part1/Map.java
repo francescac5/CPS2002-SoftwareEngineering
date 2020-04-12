@@ -58,7 +58,41 @@ public class Map {
     }
 
     private boolean generateInitMap(File mapFile) {
-        return true;
+        FileWriter fWriter;
+        BufferedWriter writer;
+        try {
+            fWriter = new FileWriter(mapFile);
+            writer = new BufferedWriter(fWriter);
+            writer.write("<html>" +
+                    "<body>" +
+                    "<table border ='1'>" +
+                    "<thead>" +
+                    "<tr>" +
+                    "<th colspan=\"" + size + "\">Player " + mapCount + "</th>" +
+                    "</tr>" +
+                    "<tbody>");
+
+            //inputting grid according to map size
+            for (int i = 0; i < size; i++) {
+                writer.write("<tr>");
+                for (int j = 0; j < size; j++) {
+                    writer.write("<td height=\"50\" width=\"50\" style=\"background-color:grey;\"></td>");
+                }
+                writer.write("</tr>");
+            }
+
+            writer.write("</tbody>" +
+                    "</thead>" +
+                    "</table>");
+            writer.newLine();
+            writer.close();
+            return true;
+        }
+        catch (Exception e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+            return false;
+        }
     }
 
     public String getHTMLFileContent(File file){
