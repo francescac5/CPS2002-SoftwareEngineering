@@ -135,6 +135,11 @@ public class Map {
         return contents;
     }
 
+    //used for testing purposes only to check correct tile type at certain position is returned
+    public Tiles[][] getTiles() {
+        return tiles;
+    }
+
     private void generateTiles() {
         int amountTiles = size*size;
         int tileCount = 1;
@@ -233,5 +238,9 @@ public class Map {
         tileTypeAmounts[3] = tileCount;
 
         return tileTypeAmounts;
+    }
+
+    public char getTileType(int x, int y) {
+        return 'x';
     }
 }

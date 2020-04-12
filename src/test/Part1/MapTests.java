@@ -1,6 +1,7 @@
 package Part1;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -685,6 +686,50 @@ public class MapTests {
         //Assert deletion
         assertTrue(map0.delete());
     }
+
+//******** map.generateInitMap() tests ********\\
+
+    @Test
+    public void testGetTileType_MinSize_ValidPosition(){
+        //Exercise
+        map.setMapSize(5);
+
+        //generates map0.html file
+        boolean result1 = map.generate();
+
+        File map0 = new File("src\\GameMaps\\map0.html");
+
+        int x = 0;
+        int y = 0;
+        char tileType = map.getTileType(x, y);
+        Map.Tiles tiles[][] = map.getTiles();
+        Map.Tiles actualTileType = tiles[x][y];
+        char actualTileTypeChar;
+
+        switch(actualTileType){
+            case GRASS:
+                actualTileTypeChar = 'G';
+                break;
+            case WATER:
+                actualTileTypeChar = 'W';
+                break;
+            case TREASURE:
+                actualTileTypeChar = 'T';
+                break;
+            default:
+                actualTileTypeChar = 'E'; //error
+        }
+
+        //Assert
+        assertTrue(map0.exists());
+        assertEquals(1, map.getMapCount());
+        assertTrue(result1);
+        assertEquals(actualTileTypeChar, tileType);
+
+        //deleting generated map
+        assertTrue(map0.delete());
+    }
+
 }
 
 
