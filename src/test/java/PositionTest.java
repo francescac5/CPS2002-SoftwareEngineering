@@ -9,5 +9,4 @@ public class PositionTest {
         p.setX(2);
         assertTrue(p.getX() == 2);
     }
-
 }
