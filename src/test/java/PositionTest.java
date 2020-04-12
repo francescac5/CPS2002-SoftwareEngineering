@@ -7,14 +7,14 @@ public class PositionTest {
     public void testSetX(){
         Position p = new Position();
         p.setX(2);
-        assertTrue(p.getX() == 2);
+        assertEquals(2, p.getX());
     }
 
     @Test
     public void testSetY(){
         Position p = new Position();
         p.setY(3);
-        assertTrue(p.getY() == 3);
+        assertEquals(3, p.getY());
     }
 
 }
