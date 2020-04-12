@@ -1,11 +1,7 @@
 package Part1;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Random;
+import java.io.*;
+import java.util.Scanner;
 
 public class Map {
 
@@ -37,6 +33,9 @@ public class Map {
             return false;
         }
 
+        boolean success = true;
+        success = generateInitMap(mapFile);
+
         return true;
     }
 
@@ -56,5 +55,29 @@ public class Map {
             e.printStackTrace();
         }
         return null;
+    }
+
+    private boolean generateInitMap(File mapFile) {
+        return true;
+    }
+
+    public String getHTMLFileContent(File file){
+        //read contents of file
+        Scanner sc = null;
+        String contents = "";
+
+        try {
+            sc = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        while (sc.hasNextLine()) {
+            contents = contents.concat(sc.nextLine());
+        }
+
+        sc.close();
+
+        return contents;
     }
 }

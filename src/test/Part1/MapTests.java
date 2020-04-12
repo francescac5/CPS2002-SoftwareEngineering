@@ -1,6 +1,8 @@
 package Part1;
 
-import org.junit.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.io.File;
 
@@ -92,13 +94,14 @@ public class MapTests {
     public void testGenerateHTMLFile() {
         //Exercise
         //generates map0.html file
-        boolean result = map.generate();
+        boolean result1 = map.generate();
 
         File map0 = new File("src\\GameMaps\\map0.html");
 
         //Assert
         assertTrue(map0.exists());
         assertEquals(1, map.getMapCount());
+        assertTrue(result1);
 
         //deleting generated map
         assertTrue(map0.delete());
@@ -326,6 +329,63 @@ public class MapTests {
 
 //******** map.generateInitMap() tests ********\\
 
+    @Test
+    public void testGenerateInitMap_MinSize(){
+        //Exercise
+        map.setMapSize(5);
+
+        //generates map0.html file
+        boolean result1 = map.generate();
+
+        File map0 = new File("src\\GameMaps\\map0.html");
+
+        //Assert
+        assertTrue(map0.exists());
+        assertEquals(1, map.getMapCount());
+        assertTrue(result1);
+
+        //expected file which contains code of an 5 x 5 table with grey cells and with header
+        File expectedFile = new File("src\\GameMaps\\testSize5_InitMap.html");
+
+        //returns content of file
+        String expectedContents = map.getHTMLFileContent(expectedFile);
+        String contents = map.getHTMLFileContent(map0);
+
+        //compare files
+        assertEquals(expectedContents, contents);
+
+        //Assert deletion
+        assertTrue(map0.delete());
+    }
+
+    @Test
+    public void testGenerateInitMap_MaxSize(){
+        //Exercise
+        map.setMapSize(8);
+
+        //generates map0.html file
+        boolean result1 = map.generate();
+
+        File map0 = new File("src\\GameMaps\\map0.html");
+
+        //Assert
+        assertTrue(map0.exists());
+        assertEquals(1, map.getMapCount());
+        assertTrue(result1);
+
+        //expected file which contains code of an 8 x 8 table with grey cells and with header
+        File expectedFile = new File("src\\GameMaps\\testSize8_InitMap.html");
+
+        //returns content of file
+        String expectedContents = map.getHTMLFileContent(expectedFile);
+        String contents = map.getHTMLFileContent(map0);
+
+        //compare files
+        assertEquals(expectedContents, contents);
+
+        //Assert deletion
+        assertTrue(map0.delete());
+    }
 }
 
 
