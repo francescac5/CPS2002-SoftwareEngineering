@@ -1,14 +1,18 @@
 package Part1;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class Map {
 
     private int size;
     private static int mapCount;
 
-    public void initMapCount(){
+    public void initMapCount() {
         mapCount = 0;
     }
 
@@ -19,21 +23,31 @@ public class Map {
 
     public boolean setMapSize(int size) {
         //if inputted size is less than minimum of 5
-        if(size < 5){
+        if (size < 5) {
             return false;
-        }
-        else{
+        } else {
             this.size = size;
             return true;
         }
     }
 
-    public void generate() {
+    public boolean generate() {
+        File mapFile = generateHTMLFile();
+        if(mapFile == null){
+            return false;
+        }
+
+        return true;
+    }
+
+    private File generateHTMLFile() {
+        File mapFile;
         try {
-            File mapFile = new File("src\\GameMaps\\map"+mapCount+".html");
+            mapFile = new File("src\\GameMaps\\map" + mapCount + ".html");
             if (mapFile.createNewFile()) {
                 System.out.println("File created: " + mapFile.getName());
                 mapCount++;
+                return mapFile;
             } else {
                 System.out.println("File already exists.");
             }
@@ -41,5 +55,6 @@ public class Map {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+        return null;
     }
 }

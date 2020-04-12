@@ -26,7 +26,7 @@ public class MapTests {
 //********** map.initMapCount() tests *******\\
 
     @Test
-    public void testInitMapCount(){
+    public void testInitMapCount() {
         //Exercise
         map.initMapCount();
 
@@ -86,12 +86,13 @@ public class MapTests {
         assertFalse(result);
     }
 
-//********** map.generate() tests **********\\
+//******** boolean result = map.generateHTMLFile() tests ********\\
+
     @Test
-    public void testGenerate() {
+    public void testGenerateHTMLFile() {
         //Exercise
         //generates map0.html file
-        map.generate();
+        boolean result = map.generate();
 
         File map0 = new File("src\\GameMaps\\map0.html");
 
@@ -104,19 +105,20 @@ public class MapTests {
     }
 
     @Test
-    public void testGenerateTwoMaps_MinPlayers() {
+    public void testGenerateTwoHTMLFiles_MinPlayers() {
         //Exercise
         //generates map0.html file
-        map.generate();
+        boolean result1 = map.generate();
 
         File map0 = new File("src\\GameMaps\\map0.html");
 
         //Assert
         assertTrue(map0.exists());
         assertEquals(1, map.getMapCount());
+        assertTrue(result1);
 
         //generates map1.html file
-        map.generate();
+        boolean result2 = map.generate();
 
         File map1 = new File("src\\GameMaps\\map1.html");
 
@@ -124,6 +126,7 @@ public class MapTests {
         assertTrue(map0.exists());
         assertTrue(map1.exists());
         assertEquals(2, map.getMapCount());
+        assertTrue(result2);
 
         //deleting generated maps
         assertTrue(map0.delete());
@@ -131,19 +134,20 @@ public class MapTests {
     }
 
     @Test
-    public void testGenerateThreeMaps() {
+    public void testGenerateThreeHTMLFiles() {
         //Exercise
         //generates map0.html file
-        map.generate();
+        boolean result1 = map.generate();
 
         File map0 = new File("src\\GameMaps\\map0.html");
 
         //Assert
         assertTrue(map0.exists());
         assertEquals(1, map.getMapCount());
+        assertTrue(result1);
 
         //generates map1.html file
-        map.generate();
+        boolean result2 = map.generate();
 
         File map1 = new File("src\\GameMaps\\map1.html");
 
@@ -151,9 +155,10 @@ public class MapTests {
         assertTrue(map0.exists());
         assertTrue(map1.exists());
         assertEquals(2, map.getMapCount());
+        assertTrue(result2);
 
         //generates map2.html file
-        map.generate();
+        boolean result3 = map.generate();
 
         File map2 = new File("src\\GameMaps\\map2.html");
 
@@ -162,6 +167,7 @@ public class MapTests {
         assertTrue(map1.exists());
         assertTrue(map2.exists());
         assertEquals(3, map.getMapCount());
+        assertTrue(result3);
 
         //deleting generated maps
         assertTrue(map0.delete());
@@ -170,19 +176,20 @@ public class MapTests {
     }
 
     @Test
-    public void testGenerateEightMaps_MaxPlayers() {
+    public void testGenerateEightHTMLFiles_MaxPlayers() {
         //Exercise
         //generates map0.html file
-        map.generate();
+        boolean result1 = map.generate();
 
         File map0 = new File("src\\GameMaps\\map0.html");
 
         //Assert
         assertTrue(map0.exists());
         assertEquals(1, map.getMapCount());
+        assertTrue(result1);
 
         //generates map1.html file
-        map.generate();
+        boolean result2 = map.generate();
 
         File map1 = new File("src\\GameMaps\\map1.html");
 
@@ -190,9 +197,10 @@ public class MapTests {
         assertTrue(map0.exists());
         assertTrue(map1.exists());
         assertEquals(2, map.getMapCount());
+        assertTrue(result2);
 
         //generates map2.html file
-        map.generate();
+        boolean result3 = map.generate();
 
         File map2 = new File("src\\GameMaps\\map2.html");
 
@@ -201,9 +209,10 @@ public class MapTests {
         assertTrue(map1.exists());
         assertTrue(map2.exists());
         assertEquals(3, map.getMapCount());
+        assertTrue(result3);
 
         //generates map3.html file
-        map.generate();
+        boolean result4 = map.generate();
 
         File map3 = new File("src\\GameMaps\\map3.html");
 
@@ -213,9 +222,10 @@ public class MapTests {
         assertTrue(map2.exists());
         assertTrue(map3.exists());
         assertEquals(4, map.getMapCount());
+        assertTrue(result4);
 
         //generates map4.html file
-        map.generate();
+        boolean result5 = map.generate();
 
         File map4 = new File("src\\GameMaps\\map4.html");
 
@@ -226,9 +236,10 @@ public class MapTests {
         assertTrue(map3.exists());
         assertTrue(map4.exists());
         assertEquals(5, map.getMapCount());
+        assertTrue(result5);
 
         //generates map5.html file
-        map.generate();
+        boolean result6 = map.generate();
 
         File map5 = new File("src\\GameMaps\\map5.html");
 
@@ -240,9 +251,10 @@ public class MapTests {
         assertTrue(map4.exists());
         assertTrue(map5.exists());
         assertEquals(6, map.getMapCount());
+        assertTrue(result6);
 
         //generates map6.html file
-        map.generate();
+        boolean result7 = map.generate();
 
         File map6 = new File("src\\GameMaps\\map6.html");
 
@@ -255,9 +267,10 @@ public class MapTests {
         assertTrue(map5.exists());
         assertTrue(map6.exists());
         assertEquals(7, map.getMapCount());
+        assertTrue(result7);
 
         //generates map7.html file
-        map.generate();
+        boolean result8 = map.generate();
 
         File map7 = new File("src\\GameMaps\\map7.html");
 
@@ -271,6 +284,7 @@ public class MapTests {
         assertTrue(map6.exists());
         assertTrue(map7.exists());
         assertEquals(8, map.getMapCount());
+        assertTrue(result8);
 
         //deleting generated maps
         assertTrue(map0.delete());
@@ -282,4 +296,36 @@ public class MapTests {
         assertTrue(map6.delete());
         assertTrue(map7.delete());
     }
+
+    @Test
+    public void testGenerateTwoSameHTMLFiles() {
+        //Exercise
+        //generates map0.html file
+        boolean result1 = map.generate();
+
+        File map0 = new File("src\\GameMaps\\map0.html");
+
+        //Assert
+        assertTrue(map0.exists());
+        assertEquals(1, map.getMapCount());
+        assertTrue(result1);
+
+        map.initMapCount(); //reset count to zero to create another map0 file
+
+        //attempt to re-generate map0.html file
+        boolean result2 = map.generate();
+
+        //Assert map0.html exist
+        assertTrue(map0.exists());
+        //Assert failure to create a duplicate file
+        assertFalse(result2);
+
+        //deleting generated maps
+        assertTrue(map0.delete());
+    }
+
+//******** map.generateInitMap() tests ********\\
+
 }
+
+
