@@ -241,6 +241,15 @@ public class Map {
     }
 
     public char getTileType(int x, int y) {
-        return 'x';
+        switch(tiles[x][y]){
+            case TREASURE:
+                return 'T';
+            case GRASS:
+                return 'G';
+            case WATER:
+                return 'W';
+            default:
+                return 'E'; //error
+        }
     }
 }

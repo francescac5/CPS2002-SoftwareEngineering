@@ -730,6 +730,31 @@ public class MapTests {
         assertTrue(map0.delete());
     }
 
+    @Test
+    public void testGetTileType_MinSize_InvalidPosition(){
+        //Exercise
+        map.setMapSize(5);
+
+        //generates map0.html file
+        boolean result1 = map.generate();
+
+        File map0 = new File("src\\GameMaps\\map0.html");
+
+        int x = 30;
+        int y = 60;
+        char tileType = map.getTileType(x, y);
+
+        char actualTileTypeChar = 'E';
+
+        //Assert
+        assertTrue(map0.exists());
+        assertEquals(1, map.getMapCount());
+        assertTrue(result1);
+        assertEquals(actualTileTypeChar, tileType);
+
+        //deleting generated map
+        assertTrue(map0.delete());
+    }
 }
 
 
