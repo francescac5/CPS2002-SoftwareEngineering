@@ -33,10 +33,8 @@ public class Map {
             return false;
         }
 
-        boolean success = true;
-        success = generateInitMap(mapFile);
-
-        return true;
+        //returns true if successful generation of initial map
+        return generateInitMap(mapFile);
     }
 
     private File generateHTMLFile() {
