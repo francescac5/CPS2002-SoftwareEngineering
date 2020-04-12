@@ -5,8 +5,15 @@ import java.util.Scanner;
 
 public class Map {
 
+    enum Tiles{
+        GRASS,
+        WATER,
+        TREASURE //1 tile
+    }
+
     private int size;
     private static int mapCount;
+    private Tiles tiles[][];
 
     public void initMapCount() {
         mapCount = 0;
@@ -93,6 +100,7 @@ public class Map {
         }
     }
 
+    //used for testing purposes to compare file content
     public String getHTMLFileContent(File file){
         //read contents of file
         Scanner sc = null;
@@ -111,5 +119,9 @@ public class Map {
         sc.close();
 
         return contents;
+    }
+
+    public Tiles[][] getTiles() {
+        return tiles;
     }
 }

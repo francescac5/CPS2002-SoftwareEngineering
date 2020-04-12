@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
+import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
@@ -86,6 +87,31 @@ public class MapTests {
 
         //Assert
         assertFalse(result);
+    }
+
+//******** boolean result = map.generateTiles() tests ********\\
+
+    @Test
+    public void testGenerateTiles_MinSize() {
+        //Exercise
+        map.setMapSize(5);
+
+        //generates map0.html file
+        boolean result1 = map.generate();
+
+        File map0 = new File("src\\GameMaps\\map0.html");
+
+        Map.Tiles[][] tiles = map.getTiles();
+
+        //Assert
+        assertEquals(5*5, tiles.length);
+
+        assertTrue(map0.exists());
+        assertEquals(1, map.getMapCount());
+        assertTrue(result1);
+
+        //deleting generated map
+        assertTrue(map0.delete());
     }
 
 //******** boolean result = map.generateHTMLFile() tests ********\\
