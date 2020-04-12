@@ -687,7 +687,7 @@ public class MapTests {
         assertTrue(map0.delete());
     }
 
-//******** map.generateInitMap() tests ********\\
+//******** map.getTileType() tests ********\\
 
     @Test
     public void testGetTileType_MinSize_ValidPosition(){
@@ -699,8 +699,8 @@ public class MapTests {
 
         File map0 = new File("src\\GameMaps\\map0.html");
 
-        int x = 0;
-        int y = 0;
+        int x = 2;
+        int y = 3;
         char tileType = map.getTileType(x, y);
         Map.Tiles tiles[][] = map.getTiles();
         Map.Tiles actualTileType = tiles[x][y];
@@ -755,6 +755,99 @@ public class MapTests {
         //deleting generated map
         assertTrue(map0.delete());
     }
+
+    @Test
+    public void testGetTileType_MaxSize_ValidPosition(){
+        //Exercise
+        map.setMapSize(50);
+
+        //generates map0.html file
+        boolean result1 = map.generate();
+
+        File map0 = new File("src\\GameMaps\\map0.html");
+
+        int x = 25;
+        int y = 32;
+        char tileType = map.getTileType(x, y);
+        Map.Tiles tiles[][] = map.getTiles();
+        Map.Tiles actualTileType = tiles[x][y];
+        char actualTileTypeChar;
+
+        switch(actualTileType){
+            case GRASS:
+                actualTileTypeChar = 'G';
+                break;
+            case WATER:
+                actualTileTypeChar = 'W';
+                break;
+            case TREASURE:
+                actualTileTypeChar = 'T';
+                break;
+            default:
+                actualTileTypeChar = 'E'; //error
+        }
+
+        //Assert
+        assertTrue(map0.exists());
+        assertEquals(1, map.getMapCount());
+        assertTrue(result1);
+        assertEquals(actualTileTypeChar, tileType);
+
+        //deleting generated map
+        assertTrue(map0.delete());
+    }
+
+    @Test
+    public void testGetTileType_MaxSize_InvalidPosition(){
+        //Exercise
+        map.setMapSize(50);
+
+        //generates map0.html file
+        boolean result1 = map.generate();
+
+        File map0 = new File("src\\GameMaps\\map0.html");
+
+        int x = 51;
+        int y = 72;
+        char tileType = map.getTileType(x, y);
+
+        char actualTileTypeChar = 'E';
+
+        //Assert
+        assertTrue(map0.exists());
+        assertEquals(1, map.getMapCount());
+        assertTrue(result1);
+        assertEquals(actualTileTypeChar, tileType);
+
+        //deleting generated map
+        assertTrue(map0.delete());
+    }
+
+    @Test
+    public void testGetTileType_ExactSize_InvalidPosition(){
+        //Exercise
+        map.setMapSize(5);
+
+        //generates map0.html file
+        boolean result1 = map.generate();
+
+        File map0 = new File("src\\GameMaps\\map0.html");
+
+        int x = 5;
+        int y = 5;
+        char tileType = map.getTileType(x, y);
+        char actualTileTypeChar = 'E';
+
+        //Assert
+        assertTrue(map0.exists());
+        assertEquals(1, map.getMapCount());
+        assertTrue(result1);
+        assertEquals(actualTileTypeChar, tileType);
+
+        //deleting generated map
+        assertTrue(map0.delete());
+    }
+
 }
 
 

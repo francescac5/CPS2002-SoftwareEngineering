@@ -241,6 +241,9 @@ public class Map {
     }
 
     public char getTileType(int x, int y) {
+        if(x >= size || y >= size){
+            return 'E';
+        }
         switch(tiles[x][y]){
             case TREASURE:
                 return 'T';
@@ -249,7 +252,7 @@ public class Map {
             case WATER:
                 return 'W';
             default:
-                return 'E'; //error
+                return 'E';
         }
     }
 }
