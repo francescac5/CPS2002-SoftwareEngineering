@@ -1,24 +1,31 @@
 public class Position {
 
     //variables for the x-axis and y-axis
-    private int x;
-    private int y;
+    private static int x;
+    private static int y;
+
+    //constructor for position
+    public Position(int x, int y)
+    {
+        Position.x = x;
+        Position.y = y;
+    }
 
     //getters and setters for the x-axis and y-axis
-    public int getX() {
+    public static int getX() {
         return x;
     }
 
-    public void setX(int x) {
-        this.x = x;
+    public static void setX(int x) {
+        Position.x = x;
     }
 
-    public int getY() {
+    public static int getY() {
         return y;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public static void setY(int y) {
+        Position.y = y;
     }
 
 }
