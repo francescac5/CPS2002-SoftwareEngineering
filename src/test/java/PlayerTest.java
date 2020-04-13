@@ -1,8 +1,22 @@
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class PlayerTest {
+
+
+
+    @Before
+    public void setup() {
+        Position p = new Position(4,5);
+    }
+
+    @After
+    public void teardown(){
+        Position p = null;
+    }
 
     @Test
     public void testPositionD(){
