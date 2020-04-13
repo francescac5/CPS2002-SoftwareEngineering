@@ -31,4 +31,18 @@ public class PlayerTest {
         Player.move('R');
         assertEquals(5, Position.getX());
     }
+
+    @Test
+    public void testPositionUNKNOWN1(){
+        Position p = new Position (4,5);
+        Player.move('P');
+        assertEquals(5, Position.getY());
+    }
+
+    @Test
+    public void testPositionUNKNOWN2(){
+        Position p = new Position (4,5);
+        Player.move('P');
+        assertEquals(4, Position.getX());
+    }
 }

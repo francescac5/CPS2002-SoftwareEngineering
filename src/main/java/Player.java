@@ -23,6 +23,11 @@ public class Player {
             case'L':
                 Position.setX(Position.getX()-1);
                 break;
+            default:
+                Position.setX(Position.getX());
+                Position.setY(Position.getY());
+                break;
+
         }
     }
 }
